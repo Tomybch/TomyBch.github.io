@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ce bout de code permet au navigateur d'adapter la page aux différentes résolutions d'écrans--> 
+    <title>KramboMusic</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">  <!--importe la bibliothèque d'icônes "fontawesome"-->
+
+</head>
+<body>
+
+    
+
+    <img src="./ressources/images/eminem.jpg" id="arriere-plan" />
+    <audio src="./ressources/musiques/eminem.mp3" id="musique"></audio>
+
+
+    <div class="principal">
+
+        <img src="./ressources/images/eminem.jpg" id="miniature">
+
+        <div class="contenu-lecteur">
+
+            <div class="header">
+                <div class="informations">
+                    <h2 class="musique-artiste">Eminem</h2>
+                    <h1 class="musique-titre">Till I Collapse</h1>
+                </div>
+
+                <div class="lancer-pause">
+                    <p onclick="lancerPause()" id="lancer-pause">
+                        <i class="fas fa-play"></i>
+                    </p>
+                </div>
+            </div>    
+
+                <div class="temps-indicateurs">
+                    <div class="tempsActuel">X</div>
+                    <div class="tempsDuree">Y</div>
+                </div>    
+
+                <input
+                    type="range"
+                    id="barre-progres"
+                    min="0"
+                    max=""
+                    value="0"
+                    onchange="modifierBarreProgres()"
+                />
+
+                <div class="boutons-avant-apres">
+                    <p onclick="musiquePrecedente()" id="musique-precedente">
+                    <i class="fas fa-backward"></i>
+                    </p>
+                    <p onclick="musiqueSuivante()" id="musique-suivante">
+                    <i class="fas fa-forward"></i>
+                    </p>
+                </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
