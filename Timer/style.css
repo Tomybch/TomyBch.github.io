@@ -1,0 +1,19 @@
+body{
+    font-family: sans-serif !important;
+}
+
+h3{
+    font-size: 2rem !important; /* ne pas oublier !important pour autoriser le css avec bootstrap */
+}
+
+.container{
+    width: 200px !important;
+}
+
+.form-group{
+    display: flex;
+}
+
+#countdown{
+    font-size: 13rem;
+}
