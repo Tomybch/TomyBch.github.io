@@ -1,0 +1,77 @@
+body{
+    background-color:#015012;
+    color: white;
+    margin: 20px;
+    line-height: 2px;
+}
+
+div{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titre1{
+    font-size: 100px;
+}
+
+.titre2{
+    font-size: 45px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    perspective: 1000px;
+}
+
+.card{
+    width: 200px;
+    margin: 10px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+
+.front, .back{
+    position: absolute;  /* pour mettre les cartes l une sur l autre */
+    backface-visibility: hidden;  
+    
+}
+
+.front{
+    background: url(black.png) no-repeat;
+    transform: rotateY(180deg);
+    background-size: 200px;
+}
+
+.back{
+    background: url(dos.png);
+    background-size: 200px;
+    
+    
+}
+
+.back:hover{
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px 3px rgb(255, 255, 255);
+}
+
+#btn{
+    font-size: 30px;
+    
+}
+
+#btn:hover{
+    transition: 0.3s;
+    box-shadow: 0px 0px 20px 3px rgb(255, 255, 255);
+}
