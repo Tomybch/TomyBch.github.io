@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    cursor: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%; /* s'arrete et commence avant la fin des bords */
+    min-height: 10vh; /* 10vh = 10% */
+    align-items: center;
+    margin: auto;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav-links li{
+    padding: 1rem;
+}
+
+.nav-links, h2{
+    flex: 1; /* permet de mieux organiser l'espace */
+}
+
+.img{
+    height: 60vh;
+    background: url(./media/basic-pics/wp4600617.jpg) no-repeat center/cover; /* cover permet de voir l image entierement */    
+    filter: sepia(70%);
+    transition: 3s;
+}
+
+.img:hover{
+    filter: none;
+}
+
+p{
+    padding: 3rem 5rem;
+}
+
+.cursor{
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #222;
+    border-radius: 50%; /* une border radius de 50% permet de creer un cercle */
+    position: absolute; /* permet avec le js d'injecter les coordonnées de la souris  */
+    transform: translate(-50%, -50%); /* permet de mettre le curseur au centre du cercle */
+    pointer-events: none; /* enleve la souris */
+    transition: all 0.5s ease;
+    transition-property:  transform;
+    z-index: 2;
+    backdrop-filter: brightness(125%);
+}
+
+.link-grow{
+    transform: scale(1.5) translate(-25%, -25%);
+    background: #222;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.hovered-link{
+    color: white;
+    transition: 0.3s ease-out;
+    z-index: 3;
+}
