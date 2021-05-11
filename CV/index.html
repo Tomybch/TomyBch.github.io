@@ -1,0 +1,488 @@
+<!DOCTYPE html> <!-- html5 permet d eviter d ecrire head et ses composants principaux -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tom Bouiche-CV</title>
+    <link rel="shortcut icon" href="./media/icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/aos/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top" id="navbar"> <!-- barre de navigation en bootstrap -->
+
+            <div class="class navbar-collapse"></div>
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Tom Bouiche</a> <!-- #rend notre lien ancré sur la page et active le select -->
+                </li>
+
+                <li class="nav-item">
+                    <a href="#langage" class="nav-link">Langages et Formation</a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li> -->
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>    
+            </ul>
+        </nav>
+        <div>
+            <h1 class="aos-item" 
+            data-aos="fade-down"
+            data-aos-offset="0"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="true" >Tom Bouiche</h1>
+
+            <div id="line"></div>
+
+            <h2 class="aos-item" 
+            data-aos="fade-up"
+            data-aos-offset="0"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="true">Développeur web Junior</h2>
+
+            <div class="container">
+                <div class="row presentation">
+                    <div class="col-6 col-md-3 infos">
+                    <h5><i class="fa fa-user"></i> 26 ans</h5>
+                    <h5><i class="fa fa-compass"></i> Marseille</h5>
+                    <h5><i class="fa fa-phone"></i> 06 34 44 56 52</h5>
+                    </div> 
+
+                    <div class="d-none d-md-block col-md-6">
+                        <span class="typed"></span>
+                    </div>
+
+                    <div class="col-6 col-md-3 photo">
+                        <img src="./media/me.jpg" alt="photo-Candidat">
+                    </div>
+                </div>
+
+                <div class="button">
+                    <a href="./media/CV.pdf" target="_blank">CV en PDF</a> <!-- _blank pour ouvrir dans une autre page -->
+                </div>
+            </div>
+    </header>
+
+    <section id="langages"
+            class="aos-item" 
+            data-aos="fade-up-right"
+            data-aos-offset="400"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="true">
+        <h3>Langages & Frameworks</h3>
+        <div>
+            <div class="bar"><img src="./media/html.png" alt="html-icon">
+            HTML</div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-strip progress-bar-animated" role="progressbar"
+                 aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 75%; background-color: #FF8000;">75%</div>
+            </div>
+
+            <div class="bar"><img src="./media/js.png" alt="JS-icon">
+            javascript</div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-strip progress-bar-animated" role="progressbar"
+                 aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 75%; background-color: #ecce48;">75%</div>
+            </div>
+
+            <div class="bar"><img src="./media/css.png" alt="css-icon">
+            CSS</div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-strip progress-bar-animated" role="progressbar"
+                 aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 75%; background-color: #0080FF;">75%</div>
+            </div>
+
+            
+        </div>
+    </section>
+    
+    <section id="formation"
+            class="aos-item" 
+            data-aos="fade-up-left"
+            data-aos-offset="400"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="true">
+        <h3>FORMATION</h3>
+
+        <div
+            class="aos-item" 
+            data-aos="fade-up-left"
+            data-aos-offset="400"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="true">
+            <div id="autodidacte">
+                <h4><i class="fa fa-university"></i>Apprentissage autodidacte</h4>
+                <div class="counter">
+                    <div class="data">
+                        <div class="counter-value" data-count="307"></div>
+                        <span>Heures de code</span>
+                    </div>
+                    <div class="data">
+                        <div class="counter-value" data-count="23"></div>
+                        <span>Projets réalisés</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div
+            class="aos-item" 
+            data-aos="fade-up-left"
+            data-aos-offset="400"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-once="true">
+            <div id="ocr">
+                <h4><i class="fa fa-university"></i>OpenClassRooms</h4>
+                <div class="counter">
+                    <div class="data">
+                        <div class="counter-value" data-count="15"></div>
+                        <span>Cours suivis</span>
+                    </div>
+                    <div class="data">
+                        <div class="counter-value" data-count="15"></div>
+                        <span>Certificats</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="parcours">
+        <h3>Parcours</h3>
+        <div>
+            <div class="timeline">
+                <div
+                class="aos-item" 
+                data-aos="zoom-out-up"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-once="false">
+                <h4>BTS Sytèmes Electroniques Numériques</h4>
+                <h6>2014-2016</h6>
+                <p>J'ai effectué un BTS Sytèmes Numériques qui m'a permis d'obtenir une culture tech et des compétences dans le domaine Hardware
+                    en etudiant la conception, et en éffectuant la maintenance currative et préventive d'appareils électroniques...
+                    Mais aussi Software, ou j'ai eu l'opportunité d'étudier la structure du réseau, les langages de programmation
+                    et leur utilisation...
+                </p>
+            </div>  
+            </div>
+      
+            <div class="timeline">
+                <div
+                class="aos-item" 
+                data-aos="zoom-out-up"
+                data-aos-offset="0"
+                data-aos-duration="500"
+                data-aos-once="false" >
+                    <h4>Technicien Reseau et Telecom</h4>
+                    <h6>2018-2020</h6>
+                    <p>J'ai eu l'opportunité de travailler en temps que Technicien Telecom pour le Groupe Bouygues,
+                        ce fut une expérience riche, ou j'ai pu mettre en pratique mes connaissances théoriques acquises lors de mes études 
+                        sur la structure d'un réseau, la communication, les liaisons entre chaque elements...
+                         </p>
+                </div>        
+            </div>
+       
+            <div class="timeline">
+                <div
+                    class="aos-item" 
+                    data-aos="zoom-out-up"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-once="false">
+                    <h4>Entrepreneur</h4>
+                    <h6>2016-2020</h6>
+                    <p>Après mes éudes, j'ai voulu découvrir le monde du travail rapidement, il en découle une période ou j'ai éffectué
+                        de nombreux métiers divers et variés, de vendeur à préparateur de commande, de livreur à hôte rbnb, de serveur à pizzaiolo...
+                        Ce périple m'a permis de me découvrir et d'acquérir de nombreuses compétences comme le travail d'équipe, la conscience professionnel,
+                        le contact avec le client...
+                    </p>
+                </div>    
+            </div>
+        
+            <div class="timeline">
+                <div
+                    class="aos-item" 
+                    data-aos="zoom-out-up"
+                    data-aos-offset="0"
+                    data-aos-duration="500"
+                    data-aos-once="false">
+                    <h4>Autodidacte - CHEZ MOI</h4>
+                    <h6>2020-2021</h6>
+                    <p>Un besoin de stabilité s'est installé sur ma personne, ces années précedentes ne sont pas regréttées mais je souhaite désormé
+                        une encre, un profession qui me correspond et qui me passionne, ou je ne compte pas les heures.
+                        C'est une question que je me pose depuis tout jeune, durant cette longue période d'introspection, le métier de développeur 
+                        devient petit à petit une évidence.
+                        J'ai toujours était fasciné par l'infinité et la profondeur d'internet et l'architecture du web,
+                        de ces informations open-source dont notre génération ont sous la main en un "clic",
+                        J'aime beaucoup l'aspect créatif, de pouvoir effectuer de nombreuses tâches avec de nombreux outils.
+                        Mais aussi la logique de l'ordinateur ou 2 font 2, plutôt 1 1 = 1 1 en binaire. Il ya cependant des règles et un cadre à respecter,
+                        au travers des langages, de la syntax ou juste un espace  peut être crucial, même de la manière de ranger ses dossiers...
+                        Mais des lors que ces paramètres sont respectés, des possibilités infini s'offre à nous.
+                        Ce chapitre est loin d'etre complet, mais cette fascination pour l infomatique m'a convaincu pour le choix de ma carrière
+                        de developpeur ! 
+                        Pendant mais surtout après l'arret de mon précedent emplois, je me suis formé en autodidacte, OpenClassRooms et de nombreuses
+                        plateformes, MDN, Stackoverflow, github, Youtube... Sont mes meilleirs amies depuis quelque mois.
+                        j'ai acquis de nombreuses connaissances et compétences allant de la culture web à une spécialisation javascript.
+                        <strong>Je n'ai pas encore établit mon portfolio mais je vous invite à cliquer sur le logo github en bas de la page
+                            où j'ai placé des projets.
+                        </strong>  </p>
+                </div>   
+                      
+            </div>
+        </div>
+    </section>
+
+
+  <!--   <section id="porfolio">
+        <h3>Portfolio</h3>
+        <div>
+            <div class="projet">
+                <div class="cadre">
+                    <div class="img-container">
+                    <a href="./media/portfolio/P.1/index.html" target="_blank">
+                        <img src="./media/projet-1.JPG" alt="projet-1">
+                    </a>
+                    </div>
+                </div>
+                <div class="legende">
+                    <h4><img src="./media/html.png" alt="html"> <img src="./media/css.png" alt="css">Site vitrine pour Maison d'hôtes</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas libero,
+                         est dolor ducimus perspiciatis impedit ipsum quia incidunt, consequatur corrupti.
+                          Iusto ea, quasi rem a architecto fuga aliquid doloribus.</p>
+                    <a href="https://www.github.com" target="_blank"><h5><i class="fa fa fa-github"></i>code source du projet</h5></a>      
+                </div>
+            </div>
+
+            <div class="projet">
+            <div class="cadre">
+                <div class="img-container">
+                <a href="./media/portfolio/P.2/index.html" target="_blank">
+                    <img src="./media/projet-2.JPG" alt="projet-2">
+                </a>
+                </div>
+            </div>
+            <div class="legende">
+                <h4><img src="./media/bootstrap.png" alt="bootstrap"> <img src="./media/html.png" alt="html"> <img src="./media/css.png" alt="css">Site E-commerce</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas libero,
+                     est dolor ducimus perspiciatis impedit ipsum quia incidunt, consequatur corrupti.
+                      Iusto ea, quasi rem a architecto fuga aliquid doloribus.</p>
+                <a href="https://www.github.com" target="_blank"><h5><i class="fa fa fa-github"></i>code source du projet</h5></a>      
+            </div>
+            </div>
+
+            <div class="projet">
+            <div class="cadre">
+                <div class="img-container">
+                <a href="./media/portfolio/P.3/index.html" target="_blank">
+                    <img src="./media/projet-3.JPG" alt="projet-3">
+                </a>
+                </div>
+            </div>
+            <div class="legende">
+                <h4> <img src="./media/sass.png" alt=""> <img src="./media/js.png" alt="js"> <img src="./media/css.png" alt="css">Site vitrine pour Maison d'hôtes</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis voluptas libero,
+                    est dolor ducimus perspiciatis impedit ipsum quia incidunt, consequatur corrupti.
+                    Iusto ea, quasi rem a architecto fuga aliquid doloribus.</p>
+                <a href="https://www.github.com" target="_blank"><h5><i class="fa fa fa-github"></i>code source du projet</h5></a>      
+            </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+    <section id="other-skills">
+        <h3>Autres compétences</h3>
+        <div class="cloud">
+
+            <div class="aos-item"
+                data-aos="fade-zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="1600">
+              <span style="color: #24292E;margin-left: -90%;">github</span>
+            </div>
+
+            <div class="aos-item"
+                data-aos="fade-zoom-in"
+                data-aos-delay="500"
+                data-aos-duration="400">
+              <span style="color: red;margin-left: 50%;">Anglais</span>
+            </div>
+
+            <div class="aos-item"
+                    data-aos="fade-zoom-in"
+                    data-aos-delay="500"
+                    data-aos-duration="1800">
+                <span style="color: rgb(199, 106, 0);margin-left:-20%;">Softskills</span>
+            </div>
+
+            <div class="aos-item"
+                    data-aos="fade-zoom-in"
+                    data-aos-delay="500"
+                    data-aos-duration="1000">
+                <span style="color: rgb(0, 146, 24);margin-left:-70%;">Méthode Agile</span>
+            </div>
+
+            <div class="aos-item"
+                    data-aos="fade-zoom-in"
+                    data-aos-delay="500"
+                    data-aos-duration="2000">
+                <span style="color: rgb(189, 0, 179);margin-left:40%;">Veille informationnelle</span>
+            </div>    
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h3>Hobbies</h3>
+        <div class="pictures">
+
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="./media/running.jpg" alt="runner">
+                    </div>
+                    <div class="flip-box-back" style="background-color: tomato;">
+                        <div>
+                            <p>Fitness</p>
+                            <p>Running</p>
+                            <p>Football</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="./media/voyage.jpg" alt="Voyages">
+                </div>
+                <div class="flip-box-back" style="background-color: forestgreen;">
+                    <div>
+                            <p>Gastronomie</p>
+                            <p>Culture</p>
+                            <p>Rencontres</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="./media/immo.jpeg" alt="Immobilier">
+                </div>
+                <div class="flip-box-back" style="background-color: mediumblue;">
+                    <div>
+                            <p>Création</p>
+                            <p>Gestion</p>
+                            <p>Architecture</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="./media/science.jpg" alt="High-tech">
+                </div>
+                <div class="flip-box-back" style="background-color: orange;">
+                    <div>
+                            <p>science</p>
+                            <p>High-tech</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <h3>Contactez-moi</h3>
+        <div class="footer-icons">
+
+            <div>
+                <a href="http://twitter.fr" class="network">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </div>
+            <div>
+                <a href="http://www.linkedin.fr" class="network">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/Tomybch/TomyBch.github.io" class="network">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>            
+
+        </div>
+
+        <div class="form-container">
+            <form id="reused_form">
+              <div>
+                <input id="name" type="text" name="name" placeholder="Nom" required class="validate">
+              </div>
+              <div>
+                <input id="email" type="email" name="email" placeholder="E-mail" required class="validate">
+              </div>
+              <div>
+                <textarea id="message" name="message" placeholder="Ici votre message..." class="validate" ></textarea>
+              </div>
+              <div>
+                <button class="form-button" type="submit">Envoyer</button>
+              </div>
+            </form>
+      
+            <div id="error_message" style="width:100%; height:100%; display:none; ">
+              <h4>Une erreur s'est produite, veuillez rééssayer</h4> 
+            </div>
+            <div id="success_message" style="width:100%; height:100%; display:none; ">
+              <h4>Message envoyé !</h4>
+            </div>
+          </div>
+
+        <div class="arrow">
+            <a href="#">
+                <i class="fa fa-sort-up"></i>
+            </a>
+        </div>
+  
+    </footer>
+        
+
+    <script src="./assets/js/typed.min.js" type="text/javascript"></script>
+    <script src="./assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/aos/aos.js" type="text/javascript"></script>
+    <script src="./assets/form/form.js"></script>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+</html>
