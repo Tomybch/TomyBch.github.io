@@ -1,0 +1,86 @@
+  <div class="pop-up" id="pop-up">
+    <div class="pop-up-container">
+      <h3>Don't miss out !<br/>Suscribe to our newsletter</h3>
+      <div class="button-container">
+        <input type="email" placeholder="please enter you email">
+        <button>Submit</button>
+      </div>
+      <i class="far fa-times-circle" id="close"></i>
+    </div>
+  </div>
+
+
+****************** CSS *******************
+.pop-up {
+  position : fixed;
+  right: 1rem;
+  bottom: 2rem;
+  height: 250px;
+  width: 520px;
+  text-align: center;
+  background: linear-gradient(90deg, #30587A, rgb(36, 113, 180));
+  border-radius: 76% 24% 90% 10% / 20% 85% 15% 80%;
+  box-shadow: 0 5px 10px black;
+  opacity: 0;
+  transform: translateX(400px);
+  transition: 1s ease-out;
+}
+.pop-up-container {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+}
+.pop-up-container h3 {
+  color: white;
+  margin: 1rem;
+  font-size: 1.5rem;}
+.button-container input {
+  border: 1px solid #333;
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  box-shadow: 1px 2px 0 black;
+  outline: none;
+  font-size: 1.2rem;
+  transition: .5s;
+}
+.button-container input:focus {
+  background: rgb(211, 242, 251);
+}
+
+.button-container button {
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: 1px solid #333;
+  outline: none;
+  cursor: pointer;
+  background: white;
+  box-shadow: 1px 2px 0 black;
+  transition: 0.3s;
+}
+.button-container button:hover {
+  background: rgb(211, 242, 251);
+  transform: translateX(-1px);
+}
+.button-container button:active {
+  transform: scale(0.96);
+}
+.fa-times-circle {
+  position: absolute;
+  left: 2rem;
+  top: .7rem;
+  font-size: 1.7rem;
+  color: white;
+  text-shadow: 2px 2px 0px #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fa-times-circle:hover {
+  color: rgb(211, 242, 251);
+  transform: translateX(-1px);
+}
+.fa-times-circle:active {
+  transform: scale(1.5);
+}
